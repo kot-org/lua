@@ -75,7 +75,7 @@ MYLDFLAGS= $(LOCAL) -Wall
 MYLIBS= 
 
 
-CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common -march=native
+CFLAGS= -Wall $(MYCFLAGS)
 AR= ar rc
 RANLIB= ranlib
 RM= rm -f
