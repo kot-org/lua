@@ -72,7 +72,7 @@ LOCAL = $(TESTS) $(CWARNS)
 # enable Linux goodies
 MYCFLAGS= $(LOCAL) -std=c99
 MYLDFLAGS= $(LOCAL) -Wall
-MYLIBS= -ldl
+MYLIBS= 
 
 
 CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common -march=native
