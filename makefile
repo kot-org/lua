@@ -75,7 +75,7 @@ MYLDFLAGS= $(LOCAL) -Wall
 MYLIBS= 
 
 
-CFLAGS= -Wall $(MYCFLAGS)
+CFLAGS= -Wall -O2 $(MYCFLAGS)
 AR= ar rc
 RANLIB= ranlib
 RM= rm -f
