@@ -70,12 +70,11 @@ LOCAL = $(TESTS) $(CWARNS)
 
 
 # enable Linux goodies
-MYCFLAGS= $(LOCAL) -std=c99 -DLUA_USE_LINUX
+MYCFLAGS= $(LOCAL) -std=c99
 MYLDFLAGS= $(LOCAL) -Wl,-E
 MYLIBS= -ldl
 
 
-CC= gcc
 CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common -march=native
 AR= ar rc
 RANLIB= ranlib
@@ -86,7 +85,7 @@ RM= rm -f
 # == END OF USER SETTINGS. NO NEED TO CHANGE ANYTHING BELOW THIS LINE =========
 
 
-LIBS = -lm
+LIBS = -lc
 
 CORE_T=	liblua.a
 CORE_O=	lapi.o lcode.o lctype.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o \
