@@ -71,7 +71,7 @@ LOCAL = $(TESTS) $(CWARNS)
 
 # enable Linux goodies
 MYCFLAGS= $(LOCAL) -std=c99
-MYLDFLAGS= $(LOCAL) -Wl,-E
+MYLDFLAGS= $(LOCAL) -Wall
 MYLIBS= -ldl
 
 
